@@ -3,6 +3,7 @@ package id.ac.polinema.intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.icu.util.ValueIterator;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,4 +24,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ImplicitIntentActivity.class);
         startActivity(intent);
     }
+    public void handleBundle(View view){
+        Intent intent = new Intent(this, BundleActivity.class);
+        startActivity(intent);
+    }
+
 }
